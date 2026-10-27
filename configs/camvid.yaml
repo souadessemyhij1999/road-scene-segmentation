@@ -1,0 +1,26 @@
+# CamVid - Cambridge-driving Labeled Video Database (University of Cambridge)
+# 701 road-scene frames from a car-mounted camera, every pixel labelled with one of 11 classes.
+# Prepared automatically by `python src/prepare_data.py` (downloads ~ 170 MB from GitHub).
+# Academic research dataset - see the terms at http://mi.eng.cam.ac.uk/research/projects/VideoRec/CamVid/
+
+path: camvid           # stored under Ultralytics' datasets folder
+train: images/train    # 367 images
+val: images/val        # 101 images
+test: images/test      # 233 images
+masks_dir: masks       # PNG masks: each pixel value = class id
+
+names:
+  0: sky
+  1: building
+  2: pole
+  3: road
+  4: sidewalk
+  5: vegetation
+  6: sign
+  7: fence
+  8: car
+  9: pedestrian
+  10: cyclist
+
+label_mapping:
+  11: ignore_label     # "unlabelled" pixels are ignored in training and scoring

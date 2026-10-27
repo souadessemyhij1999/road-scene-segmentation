@@ -1,0 +1,7 @@
+model,imgsz,mIoU,pixel_acc,ms_per_image_cpu
+Pretrained (Cityscapes),480,0.627,0.884,30.4
+Pretrained (Cityscapes),640,0.682,0.905,47.2
+Pretrained (Cityscapes),1024,0.705,0.917,120.4
+Fine-tuned (CamVid),480,0.697,0.918,31.0
+Fine-tuned (CamVid),640,0.732,0.929,47.1
+Fine-tuned (CamVid),1024,0.748,0.932,121.3
